@@ -1,9 +1,9 @@
 /*!
-Theme Name: RED Starter Theme
+Theme Name: Retro Game Theme Portfolio
 Theme URI: http://underscores.me/
-Author: RED Academy
+Author: stoiclemon
 Author URI: http://www.redacademy.com
-Description: A WordPress starter theme for RED Academy students.
+Description: A retro game portfolio theme for my good friend.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -12,7 +12,7 @@ Tags:
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
-RED Starter Theme is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+Game Theme is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
@@ -415,83 +415,9 @@ textarea {
 # Navigation
 --------------------------------------------------------------*/
 /* Links */
-a {
-  color: royalblue; }
-  a:visited {
-    color: purple; }
-  a:hover, a:focus, a:active {
-    color: midnightblue; }
-  a:focus {
-    outline: thin dotted; }
-  a:hover, a:active {
-    outline: 0; }
-
 /* Menus */
-.main-navigation {
-  clear: both;
-  display: block;
-  float: left;
-  width: 100%; }
-  .main-navigation ul {
-    display: none;
-    list-style: none;
-    margin: 0;
-    padding-left: 0; }
-    .main-navigation ul ul {
-      -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-              box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-      float: left;
-      position: absolute;
-      top: 1.5rem;
-      left: -999rem;
-      z-index: 99999; }
-      .main-navigation ul ul ul {
-        left: -999rem;
-        top: 0; }
-      .main-navigation ul ul li:hover > ul,
-      .main-navigation ul ul li.focus > ul {
-        left: 100%; }
-      .main-navigation ul ul a {
-        width: 200px; }
-    .main-navigation ul li:hover > ul,
-    .main-navigation ul li.focus > ul {
-      left: auto; }
-  .main-navigation li {
-    float: left;
-    position: relative; }
-  .main-navigation a {
-    display: block;
-    text-decoration: none; }
-
-/* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
-  display: block; }
-
-@media screen and (min-width: 768px) {
-  .menu-toggle {
-    display: none; }
-  .main-navigation ul {
-    display: block; } }
-
-.site-main .comment-navigation, .site-main
-.posts-navigation, .site-main
-.post-navigation {
-  margin: 0 0 1.5rem;
-  overflow: hidden; }
-
-.comment-navigation .nav-previous,
-.posts-navigation .nav-previous,
-.post-navigation .nav-previous {
-  float: left;
-  width: 50%; }
-
-.comment-navigation .nav-next,
-.posts-navigation .nav-next,
-.post-navigation .nav-next {
-  float: right;
-  text-align: right;
-  width: 50%; }
+.main-navigation img {
+  max-width: 180px; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -666,3 +592,28 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.home #content {
+  background-color: #000000;
+  padding: 20px;
+  color: #ffff;
+  text-align: center;
+  height: 100vh; }
+  .home #content h6 {
+    font-size: 14px; }
+  .home #content .image-title h2 {
+    margin: 0px;
+    font-size: 20px; }
+  .home #content .image-title h6 {
+    text-transform: uppercase;
+    margin-top: 12px; }
+  .home #content .home-buttons img {
+    max-width: 49px;
+    display: inline-block; }
+  .home #content .home-buttons a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px; }
+    .home #content .home-buttons a:hover {
+      color: #F7B94D; }

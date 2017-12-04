@@ -31,5 +31,6 @@ gulpfile.js
 
 # Ignore wp files #
 # =============== #
-/languages
+languages/
 index.php
+plugins/

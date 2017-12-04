@@ -716,4 +716,34 @@ object {
       color: #F7B94D; }
 
 .site-footer {
-  background-color: #000000; }
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center; }
+  .site-footer .social-icons {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 15px 0; }
+    .site-footer .social-icons:hover {
+      color: #F7B94D; }
+  .site-footer .copyright-footer h6 {
+    margin: 0px;
+    font-size: 14px;
+    font-family: "aldrichregular", "Arial", sans-serif; }
+
+.page-template-about #content {
+  padding: 20px; }
+
+.page-template-about .about-title {
+  font-family: "aldrichregular", "Arial", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center; }
+
+.page-template-about .about-photo {
+  text-align: center; }
+
+.page-template-about .about_copy {
+  font-family: "jura", "Arial", sans-serif; }
+
+.page-template-about .about-thankyou {
+  margin-top: 20px; }

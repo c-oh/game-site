@@ -472,8 +472,27 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 /* Menus */
-.main-navigation img {
-  max-width: 180px; }
+.site-branding {
+  display: none; }
+
+.main-navigation {
+  background-color: #000000; }
+  .main-navigation #desktop-menu {
+    display: none; }
+  .main-navigation img {
+    max-width: 180px; }
+  .main-navigation #mobile-menu {
+    list-style: none;
+    margin: 0px;
+    text-align: center;
+    padding: 0px; }
+    .main-navigation #mobile-menu li {
+      padding: 10px 0px; }
+  .main-navigation a {
+    text-decoration: none;
+    font-family: "bungeeregular", "Arial", sans-serif;
+    color: #ffffff;
+    margin: 10px 0px; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -651,7 +670,7 @@ object {
 .home #content {
   background-color: #000000;
   padding: 20px;
-  color: #ffff;
+  color: #ffffff;
   text-align: center;
   height: 100vh; }
   .home #content h6 {
@@ -689,9 +708,12 @@ object {
   .home #content .home-buttons a {
     display: inline-block;
     text-decoration: none;
-    color: white;
+    color: #ffffff;
     text-transform: uppercase;
     font-size: 16px;
     font-family: "bungeeregular", "Arial", sans-serif; }
     .home #content .home-buttons a:hover {
       color: #F7B94D; }
+
+.site-footer {
+  background-color: #000000; }

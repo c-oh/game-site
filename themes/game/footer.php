@@ -4,15 +4,19 @@
  *
  * @package Game_Theme
  */
-
 ?>
 
 			</div><!-- #content -->
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
-				<div class="site-info">
-					<a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'WordPress' ); ?></a>
+				<div class="social-media">
+					<a href= "#">H</a>
+					<a href= "#">H</a>
+					<a href= "#">H</a>
 				</div><!-- .site-info -->
+				<div class= "copyright-footer">
+					<h6> &#169; Jungmin Cho 2017</h6>
+				</div>
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
 

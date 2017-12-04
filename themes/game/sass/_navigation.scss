@@ -6,10 +6,32 @@
 
 
 /* Menus */
-
+.site-branding{
+	display: none;
+}
 
 .main-navigation{
+	#desktop-menu{
+		display: none;
+	}
+	background-color: $black;
 	img{
 		max-width: 180px;
 	}
+	#mobile-menu{
+		list-style: none;
+		margin: 0px;
+		text-align: center;
+		padding: 0px;
+		li{
+			padding: 10px 0px;
+		}
+	}
+	a{
+		text-decoration: none;
+		font-family: $bungee;
+		color: $white;
+		margin: 10px 0px;
+	}
 }
+

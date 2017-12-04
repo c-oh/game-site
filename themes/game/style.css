@@ -747,3 +747,30 @@ object {
 
 .page-template-about .about-thankyou {
   margin-top: 20px; }
+
+.page-template-about .about-bottom .about-thankyou {
+  display: block; }
+
+.page-template-about .about-bottom .about-social-container {
+  margin-top: 20px; }
+
+.page-template-about .about-bottom .about-social-links {
+  background-color: #F7F7F7;
+  padding: 10px;
+  border-radius: 3px;
+  margin-right: 8px; }
+  .page-template-about .about-bottom .about-social-links i {
+    color: #565656; }
+
+.page-template-about .about-bottom .contact-prompt {
+  font-family: "aldrichregular", "Arial", sans-serif;
+  text-align: center; }
+  .page-template-about .about-bottom .contact-prompt h3 {
+    font-size: 16px; }
+  .page-template-about .about-bottom .contact-prompt .contact-button {
+    text-decoration: none;
+    padding: 11px;
+    background-color: #F39A39;
+    color: #fff2ea;
+    display: block;
+    width: 100%; }

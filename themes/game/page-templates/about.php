@@ -15,15 +15,28 @@
                 } ?>
             </div>
             <div class="about_copy">
-                <!--Your story-->
-                    <?php echo CFS()->get( 'your_description' ); ?>
+                <?php echo CFS()->get( 'your_description' ); ?>
+            </div>
+            <div class="about-bottom">
+                <img class="about-thankyou" src="<?php echo get_template_directory_uri();?>/resources/images/thank-you.png" alt="Thank you">
+                <div class="about-social-container">
+                    <a href="#" class="about-social-links">
+                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" class="about-social-links">
+                        <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" class="about-social-links">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
                 </div>
-                <img src="<?php echo get_template_directory_uri();?>/resources/images/thank-you.png" alt="Thank you" class="about-thankyou">
-                <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-            </main>
+                <div class="contact-prompt">
+                    <h3>I am currently looking for new opportunities!</h3>
+                    <a class= "contact-button" href="mailto:someone@example.com?Subject=Hello">Send me an email</a>
+                </div>
+            </div>
+        </main>
         <!-- #main -->
     </div>
-        <!-- #primary -->
- <?php get_footer(); ?>
+    <!-- #primary -->
+    <?php get_footer(); ?>

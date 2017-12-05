@@ -38,8 +38,14 @@
 				<!-- .site-branding -->
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<img src="<?php echo get_template_directory_uri();?>/resources/images/logo.png" alt="logo of site">
+					<img src="<?php echo get_template_directory_uri();?>/resources/images/smalllogo.png" alt="logo of site">
 					<div class="dropdown-menu">
+						<div id= "hamburger">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'mobile-menu' ) ); ?>
 					</div>
 					<div class="row-menu">

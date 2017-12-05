@@ -16,11 +16,7 @@ get_header(); ?>
         <h6>Jungmin Cho</h6>
         </div>
     <div class="start-instructions">
-        <h6>Press start</h6>
-    </div>
-    <div class="home-buttons">
-        <div> <img src="<?php echo get_template_directory_uri();?>/resources/images/bird.png" alt="image of bird"><a href= "#">Projects</a> </div>
-        <div> <img src="<?php echo get_template_directory_uri();?>/resources/images/bird.png" alt="image of bird"><a href= "#">About</a> </div>
+        <a href="#">Press start</a>
     </div>
 
 </section>

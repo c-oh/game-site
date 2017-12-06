@@ -38,16 +38,17 @@
 				<!-- .site-branding -->
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<img src="<?php echo get_template_directory_uri();?>/resources/images/smalllogo.png" alt="logo of site">
-					<div class="dropdown-menu">
+				<div class="mobile-menu-container">
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+					<img src="<?php echo get_template_directory_uri();?>/resources/images/smalllogo.png" alt="logo of site"></a>
 						<div id= "hamburger">
 							<span></span>
 							<span></span>
 							<span></span>
 							<span></span>
 						</div>
-						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'mobile-menu' ) ); ?>
 					</div>
+					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'mobile-menu' ) ); ?>
 					<div class="row-menu">
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'desktop-menu' ) ); ?>
 					</div>

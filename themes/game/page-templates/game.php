@@ -1,12 +1,11 @@
 <?php
-/**
-* The main template file.
-*
-*@package Game_Theme
-*/
+/* Template Name: Game Page
+ *
+ * @package Game_Theme
+ */
 get_header(); ?>
 
-<section class= "home-container">
+<section class= "game-container">
     <div class="image-title">
         <img src="<?php echo get_template_directory_uri();?>/resources/images/video-title.png" alt="logo of site">
         <h2>User Interface & Graphic Designer</h2>
@@ -15,14 +14,14 @@ get_header(); ?>
         <img src="<?php echo get_template_directory_uri();?>/resources/images/copyright.png" alt="copyright logo">
         <h6>Jungmin Cho</h6>
         </div>
-    <div class="start-instructions">
+    <div class="mobile-page-start-text">
         <a href="/mobile-screen">Press start</a>
     </div>
-    <div class="start-instructions desktop-buttons">
-        <a href="projects">Projects</a>
+    <div class="mobile-page-instructions">
+        <a href="/projects">Projects</a>
     </div>
-    <div class="start-instructions desktop-buttons">
-        <a href="about-me">About</a>
+    <div class="mobile-page-instructions">
+        <a href="/about-me">About</a>
     </div>
 
 </section>

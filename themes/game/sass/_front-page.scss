@@ -1,4 +1,4 @@
-.home{
+.home, .page-template-game{
     #content{
         background-color: $black;
         padding: 25px;
@@ -37,18 +37,10 @@
             }
         }
         .start-instructions a{
-            font-family: $start;
-            text-decoration: none;
-            padding: 9px;
-            display: block;
-            text-align: center;
-            color: $white;
-            background-color: $hover;
-            max-width: 250px;
-            margin: auto;
-            text-transform: uppercase;
-            margin-top: 70px;
-            font-size: 13px;
+            @include homepage-button;
+        }
+        .desktop-buttons{
+            display: none;
         }
     }
 }

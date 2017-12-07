@@ -94,6 +94,9 @@ function game_theme_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'game_theme_scripts' );
 
+
+
+  
 /**
  * Custom template tags for this theme.
  */

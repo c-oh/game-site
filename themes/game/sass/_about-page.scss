@@ -5,6 +5,9 @@
     .about-photo{
         background-color: $background;
         height: calc(100vh - 65px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     #down-arrow{
         width: 100%;
@@ -23,5 +26,33 @@
         font-size: 13px;
         font-family: $jura;
         font-weight: 400;
+        .about-thankyou{
+            max-width: 155px;
+            display: block;
+        }
+        .about-social-links{
+            background-color: #F7F7F7;
+            padding: 10px;
+            border-radius: 3px;
+            margin-right: 8px;
+            i{
+                color: #565656; 
+            }
+        }
+    }
+    .contact-prompt{
+        font-family: $aldrich;
+        background-color: $cream;
+        text-align: center;
+        padding: 50px 0px;
+        h3{
+            font-size: 15px;
+        }
+        .contact-button{
+            @include homepage-button;
+            padding: 11px;
+            width: 250px;
+            margin: auto;
+        }
     }
 }

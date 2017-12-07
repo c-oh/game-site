@@ -792,51 +792,6 @@ object {
     font-size: 14px;
     font-family: "aldrichregular", "Arial", sans-serif; }
 
-.page-template-about #content {
-  padding: 20px; }
-
-.page-template-about .about-title {
-  font-family: "aldrichregular", "Arial", sans-serif;
-  font-size: 20px;
-  text-transform: uppercase;
-  text-align: center; }
-
-.page-template-about .about-photo {
-  text-align: center; }
-
-.page-template-about .about_copy {
-  font-family: "jura", "Arial", sans-serif; }
-
-.page-template-about .about-thankyou {
-  margin-top: 20px; }
-
-.page-template-about .about-bottom .about-thankyou {
-  display: block; }
-
-.page-template-about .about-bottom .about-social-container {
-  margin-top: 20px; }
-
-.page-template-about .about-bottom .about-social-links {
-  background-color: #F7F7F7;
-  padding: 10px;
-  border-radius: 3px;
-  margin-right: 8px; }
-  .page-template-about .about-bottom .about-social-links i {
-    color: #565656; }
-
-.page-template-about .about-bottom .contact-prompt {
-  font-family: "aldrichregular", "Arial", sans-serif;
-  text-align: center; }
-  .page-template-about .about-bottom .contact-prompt h3 {
-    font-size: 16px; }
-  .page-template-about .about-bottom .contact-prompt .contact-button {
-    text-decoration: none;
-    padding: 11px;
-    background-color: #F39A39;
-    color: #fff2ea;
-    display: block;
-    width: 100%; }
-
 .game-container .mobile-page-start-text {
   margin: 54px 0;
   animation: blink-animation 1s steps(5, start) infinite;
@@ -878,7 +833,16 @@ object {
 
 .page-template-about .about-photo {
   background-color: #F0F3F2;
-  height: calc(100vh - 65px); }
+  height: calc(100vh - 65px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .page-template-about #down-arrow {
   width: 100%;
@@ -897,3 +861,37 @@ object {
   font-size: 13px;
   font-family: "jura", "Arial", sans-serif;
   font-weight: 400; }
+  .page-template-about .about-bottom .about-thankyou {
+    max-width: 155px;
+    display: block; }
+  .page-template-about .about-bottom .about-social-links {
+    background-color: #F7F7F7;
+    padding: 10px;
+    border-radius: 3px;
+    margin-right: 8px; }
+    .page-template-about .about-bottom .about-social-links i {
+      color: #565656; }
+
+.page-template-about .contact-prompt {
+  font-family: "aldrichregular", "Arial", sans-serif;
+  background-color: #FFFEF4;
+  text-align: center;
+  padding: 50px 0px; }
+  .page-template-about .contact-prompt h3 {
+    font-size: 15px; }
+  .page-template-about .contact-prompt .contact-button {
+    font-family: "press_start_2pregular", "Helvetica", sans-serf;
+    text-decoration: none;
+    padding: 9px;
+    display: block;
+    text-align: center;
+    color: #ffffff;
+    background-color: #F7B94D;
+    max-width: 250px;
+    margin: auto;
+    text-transform: uppercase;
+    margin-top: 70px;
+    font-size: 13px;
+    padding: 11px;
+    width: 250px;
+    margin: auto; }

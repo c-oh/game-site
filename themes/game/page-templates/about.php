@@ -31,11 +31,11 @@
                         <i class="fa fa-linkedin" aria-hidden="true"></i>
                     </a>
                 </div>
-                <div class="contact-prompt">
+            </div>
+            <div class="contact-prompt">
                     <h3>I am currently looking for new opportunities!</h3>
                     <a class= "contact-button" href="mailto:someone@example.com?Subject=Hello">Send me an email</a>
                 </div>
-            </div>
         </main>
         <!-- #main -->
     </div>

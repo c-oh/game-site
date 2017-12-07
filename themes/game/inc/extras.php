@@ -107,6 +107,23 @@ function game_theme_wp_trim_excerpt( $text ) {
 remove_filter( 'get_the_excerpt', 'wp_trim_excerpt' );
 add_filter( 'get_the_excerpt', 'game_theme_wp_trim_excerpt' );
 
+
+function single_project_method() {
+	if(!is_page_template( 'single-project.php' )){
+		return;
+	}
+	$url = CFS()->get( 'project_banner_image' );//This is grabbing the background image via Custom Field Suite Plugin
+	/*$custom_css = "
+	.about-hero{
+		background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url({$url}) no-repeat bottom center;
+		background-size: cover;
+		background-position: 50% center;
+	}";*/
+wp_add_inline_style( 'game-theme-style'/*, $custom_css*/ );
+}
+add_action( 'wp_enqueue_scripts', 'single_project_method' );
+
+
 /**	Set custom archive title
 */ 
 function display_custom_archive_title ($title) {

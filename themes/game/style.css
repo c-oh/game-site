@@ -903,3 +903,23 @@ object {
     margin-top: 50px; }
   .post-type-archive-project .project-post {
     margin: 46px 0; }
+
+.single-project .sp-info {
+  padding: 20px;
+  font-family: "jura", "Arial", sans-serif; }
+
+.single-project .project-page-title {
+  font-family: "aldrichregular", "Arial", sans-serif;
+  text-align: center;
+  font-size: 16px;
+  margin: 10px 0; }
+
+.single-project .single-product-title {
+  font-weight: 600;
+  text-align: center;
+  font-size: 18px;
+  margin: 10px 0; }
+
+.single-project .sp-title {
+  margin: 10px 0;
+  font-weight: 600; }

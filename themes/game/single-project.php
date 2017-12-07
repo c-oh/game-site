@@ -12,24 +12,36 @@ get_header(); ?>
 				<div class="sp-thumbnail">
 					<?php the_post_thumbnail( 'category-thumb'); ?>
 				</div>
-				<div class="sp-info">
-					<h2 class="single-product-title">
-						<?php the_title();?>
-					</h2>
-					<p class="sp-price">
-						<?php echo CFS()->get( 'product_price' ); ?>
-					</p>
-					<p class="sp-description" <?php the_content();?> </>
-					<div class="social-media-button">
-						<p class="white-link"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i> Like</a></p>
-						<p class="white-link"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> Tweet</a></p>
-						<p class="white-link"><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i> Pin</a></p>
-					</div>
+				<div class="sp-info">Project</h1>
+					<h1 class="project-type">
+						<h2 class="single-product-title">
+							<?php the_title();?>
+						</h2>
+						<h3 class="project-overview">Overview:</h3>
+						<p>
+							<?php echo CFS()->get( 'project_overview' ); ?>
+						</p>
+						<h3 class="project-client">Client:</h3>
+						<p>
+							<?php echo CFS()->get( 'project_client' ); ?>
+						</p>
+						<h3 class="project-role">Role:</h3>
+						<p>
+							<?php echo CFS()->get( 'project_role' ); ?>
+						</p>
+						<h3 class="project-deliverables">Deliverables:</h3>
+						<p>
+							<?php echo CFS()->get( 'project_deliverables' ); ?>
+						</p>
+						<h3 class="project-tools">Tools:</h3>
+						<p>
+							<?php echo CFS()->get( 'project_tools' ); ?>
+						</p>
 				</div>
 			</section>
 			<?php
 			?>
-				<?php endwhile; // End of the loop. ?>
+			<?php endwhile; // End of the loop. ?>
 		</main>
 		<!-- #main -->
 	</section>

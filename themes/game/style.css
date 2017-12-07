@@ -895,3 +895,11 @@ object {
     padding: 11px;
     width: 250px;
     margin: auto; }
+
+.post-type-archive-project {
+  text-align: center; }
+  .post-type-archive-project .page-title {
+    font-family: "aldrichregular", "Arial", sans-serif;
+    margin-top: 50px; }
+  .post-type-archive-project .project-post {
+    margin: 46px 0; }

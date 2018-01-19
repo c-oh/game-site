@@ -2,9 +2,12 @@
     #content{
         padding: 0px;
     }
+    .about-title{
+        display: none;
+    }
     .about-photo{
         background-color: $background;
-        height: calc(100vh - 65px);
+        height: calc(80vh - 65px);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -15,14 +18,26 @@
         margin-top: -45px;
         text-align: center;
         cursor: pointer;
+        img{
+            max-width: 50px;
+            height: auto;
+            margin-top: -15px;
+        }
     }
     #about-copy{
         padding: 20px;
         font-family: $jura;
         font-size: 16px;
+        .resume-link{
+            color: $hover;
+            text-decoration: none;
+            &:hover{
+                color: $hover-on-hover;
+            }
+        }
     }
     .about-bottom{
-        padding: 20px;
+        padding: 0px 20px 20px 20px;
         font-size: 13px;
         font-family: $jura;
         font-weight: 400;
@@ -30,13 +45,15 @@
             max-width: 155px;
             display: block;
         }
+        .about-social-container{
+            margin: 40px 0px;
+        }
         .about-social-links{
-            background-color: #F7F7F7;
-            padding: 10px;
             border-radius: 3px;
             margin-right: 8px;
-            i{
-                color: #565656; 
+            .social-logo{
+                height: auto;
+                width: 30px;
             }
         }
     }
@@ -53,6 +70,64 @@
             padding: 11px;
             width: 250px;
             margin: auto;
+        }
+    }
+}
+
+@media(min-width: 800px){
+    .page-template-about{
+        .about-title{
+            display: block;
+            font-family: $aldrich;
+            text-transform: uppercase;
+            text-align: center;
+            width: 100%;
+            margin: 50px 0;
+            font-size: 30px;
+        }
+        .about-top-container{
+            max-width: 1100px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 0px 20px ;
+            margin-bottom: 80px;
+        }
+        .about-text-container{
+            width: 50%;
+            margin-right: 40xp;
+            #about-copy{
+                padding: 0px;
+                font-size: 18px;
+            }
+            .about-bottom{
+                padding-left: 0px;
+                margin-top: 20px;
+            }
+        }
+        .about-photo{
+            background-color: $background;
+            width: 45%;
+            height: auto;
+        }
+        #down-arrow{
+            display: none;
+        } 
+        .contact-prompt{
+            width: 100%;
+            .contact-button{
+                max-width: 300px;
+                width: 300px;
+            }
+        }  
+    }
+}
+
+@media(min-width: 1200px){
+    .page-template-about{
+        .about-photo{
+            max-width: 400px;
         }
     }
 }

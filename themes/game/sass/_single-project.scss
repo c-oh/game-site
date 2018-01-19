@@ -1,22 +1,96 @@
-.single-project{
-    .sp-info{
+.single-project {
+    .sp-thumbnail img {
+        width: 100%;
+        height: calc(80vh - 65px);
+        object-fit: cover;
+    }
+    #project-down-arrow {
+        width: 100%;
+        position: absolute;
+        margin-top: -45px;
+        text-align: center;
+        cursor: pointer;
+        img{
+            max-width: 50px;
+            height: auto;
+            margin-top: -15px;
+        }
+    }
+    .sp-info {
         padding: 20px;
         font-family: $jura;
     }
-    .project-page-title{
+    .project-page-title {
         font-family: $aldrich;
         text-align: center;
-        font-size: 16px;
-        margin: 10px 0;
+        font-size: 20px;
+        text-transform: uppercase;
     }
-    .single-product-title{
+    .single-project-title {
         font-weight: 600;
         text-align: center;
-        font-size:18px;
-        margin: 10px 0;
+        font-size: 18px;
+        margin: 10px 0 53px 0;
     }
-    .sp-title{
+    .sp-title {
         margin: 10px 0;
-        font-weight: 600;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .sp-image-container {
+        text-align: center;
+        padding: 25px 0px;
+        img {
+            max-width: 100%;
+            height: auto;
+            padding: 25px 0px;
+            max-height: 500px;
+        }
+    }
+}
+
+@media(min-width: 900px) {
+    .single-project {
+        .sp-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 800px;
+            margin: auto;
+        }
+        .project-page-title {
+            font-size: 40px;
+            width: 100%;
+        }
+        .single-project-title {
+            font-size: 34px;
+            width: 100%;
+        }
+        .sp-container-2 {
+            width: 49%;
+            font-size: 18px;
+            .sp-title{
+                font-size: 23px;
+            }
+            p{
+                margin-top: 0px;
+            }
+        }
+    }
+}
+
+@media(min-width: 1000px) {
+    .single-project {
+        .sp-info {
+            max-width: 900px;
+        }
+    }
+}
+
+@media(min-width: 1100px) {
+    .single-project {
+        .sp-info {
+            max-width: 1000px;
+        }
     }
 }

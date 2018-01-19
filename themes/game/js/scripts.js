@@ -9,19 +9,19 @@ jQuery(document).ready(function () {
 
 
 //allows button to jump to about section
- jQuery("#down-arrow").click(function() {
-  console.log("How ar eyou");
+ jQuery("#down-arrow, #project-down-arrow").click(function() {
   jQuery('html,body').animate({
-      scrollTop: jQuery("#about-copy").offset().top},
+      scrollTop: jQuery("#about-copy, #sp-text-container").offset().top},
       'slow');
 });
 
- /* var jQuerymenu = jQuery('#mobile-menu');
-  
-  jQuery(document).mouseup(function (e) {
-     if (!jQuerymenu.is(e.target) // if the target of the click isn't the container...
-     && jQuerymenu.has(e.target).length === 0) // ... nor a descendant of the container
-     {
-       jQuerymenu.hide();
-    }
-   });*/
+//game hover
+jQuery('.home-game-container .game-projects a').hover(
+	function(){ jQuery(".home-game-container .game-projects .bird").addClass('show') },
+	function(){ jQuery(".home-game-container .game-projects .bird").removeClass('show') }
+)
+
+jQuery('.home-game-container .game-about a').hover(
+	function(){ jQuery(".home-game-container .game-about .bird").addClass('show') },
+	function(){ jQuery(".home-game-container .game-about .bird").removeClass('show') }
+)

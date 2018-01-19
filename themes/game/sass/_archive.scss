@@ -3,9 +3,67 @@
     .page-title {
         font-family: $aldrich;
         margin-top: 50px;
+        text-transform: uppercase;
     }
     .project-post {
         margin: 46px 0;
-        
+        img{
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+        }
+    }
+}
+
+//tablet
+@media(min-width: 768px) {
+    .post-type-archive-project {
+        .content-area {
+            margin-bottom: 74px;
+        }
+        .site-main {
+            max-width: 720px;
+            margin: auto;
+            .page-title {
+                margin: 40px 0;
+            }
+            .boxes {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                .project-post {
+                    margin: 5px 0;
+                    img {
+                        height: 353px;
+                        width: 353px;
+                        object-fit: cover;
+                        &:hover {
+                            opacity: 0.5;
+                            filter: alpha(opacity=50);
+                            /* For IE8 and earlier */
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//desktop
+@media(min-width: 1200px) {
+    .post-type-archive-project .site-main {
+        max-width: 1100px;
+        .page-title {
+            margin: 70px 0;
+        }
+        .boxes {
+            .project-post {
+                margin: 5px 0;
+                img {
+                    height: 353px;
+                    width: 353px;
+                }
+            }
+        }
     }
 }

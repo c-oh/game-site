@@ -1,5 +1,6 @@
-.game-container{
-    .mobile-page-start-text{
+
+.home-game-container{
+    .game-page-start-text{
         margin: 54px 0;
         animation: blink-animation 1s steps(5, start) infinite;
         -webkit-animation: blink-animation 1s steps(5, start) infinite;
@@ -8,6 +9,7 @@
             color: $white;
             text-decoration: none;
             text-transform: uppercase; 
+            pointer-events: none;
         }
     }
       @keyframes blink-animation {
@@ -20,12 +22,43 @@
           visibility: hidden;
         }
     }
-    .mobile-page-instructions a{
+    .game-page-instructions a{
         @include homepage-button;
         text-transform: uppercase;
         max-width: 232px;
         padding: 18px;
         margin-top: 50px;
+        font-family: $bungee;
     }
-    
+    .bird{
+        display: none;
+    }
+}
+
+
+@media(min-width: 1000px){
+    .home-game-container{
+        .game-page-start-text{
+            animation: none;
+        }
+        .game-page-instructions{
+            a{
+                background-color: transparent;
+                display: inline-block;
+                font-size: 20px;
+                margin-top: 0px;
+
+                &:hover{
+                    color: $hover;
+                }
+            }
+            .bird{
+                width: 70px;
+            }
+            .bird.show{
+                display: inline-block;
+                margin-bottom: -30px;
+            }
+        }
+    }
 }

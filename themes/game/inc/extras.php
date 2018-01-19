@@ -45,7 +45,7 @@ function get_all_project_posts( $query ) {
 	if(is_post_type_archive('project') && !is_admin() && $query->is_main_query()) {
 		$query->set('posts_per_page', '16');
 		$query->set('orderby', 'date');
-		$query->set('order' , 'ASC');
+		$query->set('order' , 'DESC');
 	}
 }
 add_action( 'pre_get_posts', 'get_all_project_posts');

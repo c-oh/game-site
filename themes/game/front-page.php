@@ -6,9 +6,9 @@
 */
 get_header(); ?>
 
-<section class= "home-container">
+<section class= "home-game-container ">
     <div class="image-title">
-        <img src="<?php echo get_template_directory_uri();?>/resources/images/video-title.png" alt="logo of site">
+        <img class= "banner" src="<?php echo get_template_directory_uri();?>/resources/images/video-title.png" alt="logo of site">
         <h2>User Interface & Graphic Designer</h2>
     </div>
     <div class= "copyright-container">
@@ -16,14 +16,14 @@ get_header(); ?>
         <h6>Jungmin Cho</h6>
         </div>
     <div class="start-instructions">
-        <a href="/mobile-screen">Press start</a>
+        <a href="/jessica/game">Press start</a>
     </div>
-    <div class="start-instructions desktop-buttons">
+   <!-- <div class="start-instructions desktop-buttons">
         <a href="projects">Projects</a>
     </div>
     <div class="start-instructions desktop-buttons">
         <a href="about-me">About</a>
-    </div>
+    </div>-->
 
 </section>
     <?php get_footer(); ?>

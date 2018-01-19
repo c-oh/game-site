@@ -37,9 +37,9 @@
 				</div>
 				<!-- .site-branding -->
 
-				<nav id="site-navigation" class="main-navigation" role="navigation">
+				<nav id="site-navigation" class="main-navigation mobile-navigation" role="navigation">
 				<div class="mobile-menu-container">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+				<a class="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 					<img src="<?php echo get_template_directory_uri();?>/resources/images/smalllogo.png" alt="logo of site"></a>
 						<div id= "hamburger">
 							<span></span>
@@ -49,6 +49,16 @@
 						</div>
 					</div>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'mobile-menu' ) ); ?>
+					<div class="row-menu">
+						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'desktop-menu' ) ); ?>
+					</div>
+				</nav>
+				<!-- desktop -->
+				<nav id="site-navigation" class="main-navigation desktop-navigation" role="navigation">
+				<div class="desktop-container">
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+					<img src="<?php echo get_template_directory_uri();?>/resources/images/smalllogo.png" alt="logo of site"></a>
+					</div>
 					<div class="row-menu">
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'desktop-menu' ) ); ?>
 					</div>
